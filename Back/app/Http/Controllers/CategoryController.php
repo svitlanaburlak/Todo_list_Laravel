@@ -27,22 +27,22 @@ class CategoryController extends Controller
         $categoriesList = [
             1 => [
                 'id' => 1,
-                'name' => 'Chemin vers O\'clock',
+                'name' => 'Study',
                 'status' => 1
             ],
             2 => [
                 'id' => 2,
-                'name' => 'Courses',
+                'name' => 'Shopping',
                 'status' => 1
             ],
             3 => [
                 'id' => 3,
-                'name' => 'O\'clock',
+                'name' => 'Administration',
                 'status' => 1
             ],
             4 => [
                 'id' => 4,
-                'name' => 'Titre Professionnel',
+                'name' => 'Examen: Titre Professionnel',
                 'status' => 1
             ]
         ];
