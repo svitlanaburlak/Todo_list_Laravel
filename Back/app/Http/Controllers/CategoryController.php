@@ -12,10 +12,8 @@ class CategoryController extends Controller
      */
     public function list()
     {
-        // Les données à retourner
         $categoriesList = Category::all();
 
-        // Sous forme de JSON
         return response()->json($categoriesList);
     }
 
@@ -26,7 +24,6 @@ class CategoryController extends Controller
      */
     public function item($id)
     {
-        // Les données à retourner
         $categoriesList = [
             1 => [
                 'id' => 1,
@@ -50,16 +47,12 @@ class CategoryController extends Controller
             ]
         ];
 
-        // L'id demandé existe-t-il ?
         if (!array_key_exists($id, $categoriesList)) {
-            // Laravel va intercepter l'exception lancée ici
-            // et retourner une réponse
-            // Le code qui suit ce bloc d'instruction ne sera jmaais exécuté
+
             // @todo NE PAS retourner de HTML
             abort(404);
         }
 
-        // Sous forme de JSON, depuis l'id demandé
         return response()->json($categoriesList[$id]);
     }
 }

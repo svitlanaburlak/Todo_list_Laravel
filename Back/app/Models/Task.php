@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Représente la table "tasks" et ses enregistrements
+ * For Eloquent this class represent the table "tasks"
  */
 class Task extends Model
 {
     /**
-     * On défini une méthode pour créer la relation entre Task et Category (voir le MCD !)
+     * Method to link Category and Task and Category
      * @link https://laravel.com/docs/8.x/eloquent-relationships#one-to-many-inverse
      */
     public function category()
