@@ -29,7 +29,6 @@
     font-size: 0.8rem;
   }
   
-  /* Comme Trello, curseur = main <3 Gurvan */
   .task__title-label:hover {
     cursor: pointer;
   }

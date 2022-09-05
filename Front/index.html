@@ -6,12 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TodoList</title>
   <link rel="stylesheet" href="assets/css/font-awesome.css" />
-  <!-- L'intégration repose en partie sur le framework CSS Bulma :
-    - Bulma propose uniquement des styles CSS
-    - Bulma ne gère pas les interactions Javascript contrairement à Bootstrap
-    - Si on veut gérer des interactions, il faudra donc les écrire nous même en Javascript
-    - Documentation : https://bulma.io/documentation/
-  -->
   <link rel="stylesheet" href="assets/css/bulma.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -31,7 +25,6 @@
           <button class="filters__choice button" data-filter="todo">Incomplètes</button>
         </div>
         <div class="filters__task filters__task--category select is-small">
-          <!-- Ici le select des catégories -->
         </div>
         <div class="filters__task filters__task--archived">
           <a class="filters__choice" href="#" data-filter="archive">Voir les archives</a>
@@ -48,7 +41,6 @@
             </div>
             <div class="task__category">
               <div class="select is-small task__category-select">
-                <!-- Ici le select des catégories -->
               </div>
             </div>
             <div class="task__buttons">
@@ -66,7 +58,7 @@
     </main>
   </div>
 
-  <!-- Template pour la tâche -->
+  <!-- Template -->
   <template id="task-template">
     <div class="task task--todo" data-category="***CATEGORY***" data-id="***ID***">
       <div class="task__content">
@@ -117,14 +109,11 @@
     </div>
   </template>
 
-  <!-- atelier-e07 -->
   <script src="assets/js/components/filter.js"></script>
-  <!-- Etape 2 -->
   <script src="assets/js/components/task.js"></script>
   <script src="assets/js/components/taskList.js"></script>
   <script src="assets/js/components/newTaskForm.js"></script>
   <script src="assets/js/components/categoriesList.js"></script>
-  <!-- Etape 1 -->
   <script src="assets/js/app.js"></script>
 
 </body>
